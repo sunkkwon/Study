@@ -52,7 +52,7 @@ public class ListEx extends JFrame {
 		JPanel panel = new JPanel();
 		contentPane.add(panel, BorderLayout.NORTH);
 
-		tf = new JTextField();	//kk
+		tf = new JTextField();	//kk  sss
 		panel.add(tf);
 		tf.setColumns(10);
 
