@@ -18,8 +18,8 @@ public class ListEx extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField tf;
-	private JList list;
-	private DefaultListModel model;
+	private JList<String> list;
+	private DefaultListModel<String> model;
 
 	/**
 	 * Launch the application.
@@ -90,7 +90,7 @@ public class ListEx extends JFrame {
 
 		model = new DefaultListModel<>();
 
-		list = new JList();
+		list = new JList<String>();
 		contentPane.add(list, BorderLayout.CENTER);
 	}
 
