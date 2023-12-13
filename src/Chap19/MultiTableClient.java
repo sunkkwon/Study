@@ -76,8 +76,8 @@ public class MultiTableClient extends JFrame {
 				if (e.getStateChange() == ItemEvent.SELECTED) {
 					int table = cboTable.getSelectedIndex() + 2;
 					try {
-						dos.writeInt(table);
-						taResult.setText(dis.readUTF());
+						dos.writeInt(table);	// 서버로 단을 전송한다
+						taResult.setText(dis.readUTF());	// 서버에서 수신한 결과를 set 한다.
 					} catch (Exception e2) {
 						// TODO: handle exception
 						e2.printStackTrace();

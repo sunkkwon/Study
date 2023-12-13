@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class MultiTableServer implements Runnable {
-	private ServerSocket serverSocket;
+	private ServerSocket serverSocket;		// server listener
 	private Socket socket;
 	private DataInputStream dis;
 	private DataOutputStream dos;
@@ -31,7 +31,7 @@ public class MultiTableServer implements Runnable {
 				dos = new DataOutputStream(socket.getOutputStream()); //
 
 				Thread th = new Thread(this);
-				th.start();
+				th.start();			// run 메소드 실핼
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
